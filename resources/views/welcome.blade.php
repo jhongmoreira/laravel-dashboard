@@ -1,5 +1,14 @@
 @extends('layouts.default')
 
+@section('page-title', 'Dashboard')
+
+@php
+  $breadcrumbs = [
+    ['label' => 'Home', 'route' => ''],
+    ['label' => 'Dashboard', 'route' => '', 'active' => true],
+  ];
+@endphp
+
 @section('content')
             <!--begin::Row-->
             <div class="row">
